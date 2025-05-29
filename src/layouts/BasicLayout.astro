@@ -13,7 +13,7 @@ const { title, description, page, pubDate } = Astro.props;
 const image =
   page === "travel"
     ? `${Astro.url.origin}/globe_preview.webp"`
-    : `${Astro.url.origin}/og-image.png`;
+    : `${Astro.url.origin}/me.png`;
 
 const schema =
   page !== "blog"
@@ -73,7 +73,7 @@ const schema =
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width" name="viewport" />
-    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="/me3.png" rel="icon" type="image/x-icon" />
     <meta content={Astro.generator} name="generator" />
     <title>{title}</title>
     <meta content={description} name="description" />
